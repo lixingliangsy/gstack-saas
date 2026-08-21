@@ -1,0 +1,35 @@
+{
+  "name": "gstack-saas",
+  "version": "0.1.0",
+  "private": true,
+  "description": "GStack 增长工作台 — 面向独立开发者的出海控制台（建站/支付/合规/增长分析）",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "selftest": "tsx lib/rules/__selftest.ts"
+  },
+  "dependencies": {
+    "next": "14.0.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "@waffo/pancake-ts": "^0.12.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^6.9.0"
+  },
+  "devDependencies": {
+    "typescript": "5.3.3",
+    "@types/node": "20.11.0",
+    "@types/react": "18.2.0",
+    "@types/react-dom": "18.2.0",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/nodemailer": "^6.4.0",
+    "tailwindcss": "3.4.17",
+    "postcss": "8.4.33",
+    "autoprefixer": "10.4.16",
+    "tsx": "^4.7.0"
+  }
+}

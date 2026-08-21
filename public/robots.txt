@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Disallow admin + private endpoints
+Disallow: /admin/
+Disallow: /api/admin/
+Disallow: /account
+Disallow: /embed/
+
+Sitemap: https://gstack.example.com/sitemap.xml

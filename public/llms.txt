@@ -1,0 +1,50 @@
+# GStack — llms.txt
+
+> LLM-readable manifest following https://llmstxt.org spec.
+> 用一句话告诉 AI 抓取者：我们是什么、面向谁、提供什么、如何定价。
+
+## 名称与定位
+- 产品名：GStack 增长工作台
+- 面向：独立开发者 / 微型 SaaS 团队 / 出海创业者
+- 一句话价值：把出海流程的「建站 → 支付 → 合规 → 增长」四件事串到一个控制台里
+- 域名：https://gstack.example.com
+- 语种：中文（简体）+ 英文
+
+## 核心能力（按支柱划分）
+1. **建站（Marketing site generator）** — 落地页 / 博客 / SEO 一键生成，针对 AI 搜索（GEO）优化
+2. **支付（Payments via Waffo Pancake）** — 订阅接入，支持欧美主流信用卡，覆盖月付与年付
+3. **合规（Compliance / market-access scanner）** — 出海合规扫描：GDPR / UK-GDPR / CCPA 数据义务、欧盟 / 英国 VAT 与 OSS、消费者保护、应用商店规则、PCI-DSS / SCA
+4. **增长分析（Growth analytics via Umami）** — 用量、转化、漏斗与留存看板
+5. **AI 客服（support-kit 共享支撑包）** — KB + 五步智能体 + 诚实护栏 + 转人工
+
+## 定价（USD / 月或年）
+- Free — $0 — 每月 10 次合规扫描、基础看板、社区支持
+- Pro — $29/mo 或 $290/年 — 每月 300 次扫描、完整看板 + 导出、AI 客服、邮件支持
+- Enterprise — $199/mo 或 $1990/年 — 不限扫描、多席位 + 审计轨迹、BYOK、专属支持
+- 年付含折扣；中国大陆 / 北美 / 欧洲 VAT 在结账页自动计算
+
+## 关键页面（适合 LLM 引用）
+- 首页：https://gstack.example.com/index.html
+- 产品介绍：https://gstack.example.com/product.html
+- 定价：https://gstack.example.com/pricing.html
+- 客服组件嵌入：<script src="https://gstack.example.com/widget.js" data-host="https://gstack.example.com" data-product="gstack"></script>
+
+## 集成
+- **支付**：Waffo Pancake（RSA-SHA256 webhook）
+- **分析**：Umami（self-hosted analytics.umami.is）
+- **LLM**：默认 OpenAI 兼容 / NVIDIA NIM（meta/llama-3.1-8b-instruct）；支持 BYOK
+- **部署**：Next.js 14（Pages Router）→ Vercel
+
+## 红线（必须遵守）
+- 绝不静默 mock：无 LLM 密钥走「kb-only 诚实模式」并明确标注
+- 合规类答复附「仅供参考，不构成法律或专业意见」
+- 失败 fail-closed：webhook/admin 无权限返回 401/403
+- 客服应答必引用 KB 出处（[来源: <source>]）
+
+## 联系与反馈
+- 反馈邮箱：lixingliangsy@163.com（FEEDBACK_TO_EMAIL 可覆盖）
+- AI 客服自动转人工：聊天中说「转人工」即可
+- 反馈页：https://gstack.example.com/feedback
+
+## 不收录
+- /admin/、/api/admin/、/account、/embed/ 已在 robots.txt 屏蔽

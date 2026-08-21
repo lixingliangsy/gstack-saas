@@ -1,0 +1,627 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="GStack 增长工作台 — 集多语言建站、全球支付与增长分析于一体，帮助独立开发者高效出海。">
+<meta name="theme-color" content="#2563EB">
+<meta property="og:type" content="product">
+<meta property="og:title" content="产品 · GStack 增长工作台">
+<meta property="og:description" content="集多语言建站、全球支付、合规扫描与增长分析于一体，帮助独立开发者高效出海。">
+<meta property="og:image" content="https://gstack.example.com/og-cover.svg">
+<meta property="og:url" content="https://gstack.example.com/product.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="产品 · GStack 增长工作台">
+<meta name="twitter:description" content="集多语言建站、全球支付、合规扫描与增长分析于一体。">
+<meta name="twitter:image" content="https://gstack.example.com/og-cover.svg">
+<link rel="canonical" href="https://gstack.example.com/product.html">
+<link rel="alternate" type="text/plain" href="https://gstack.example.com/llms.txt" title="LLM manifest">
+<title>产品 · GStack 增长工作台</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "GStack 增长工作台",
+  "description": "建站 / 支付 / 合规 / 增长分析 四支柱 SaaS 控制台。",
+  "image": "https://gstack.example.com/og-cover.svg",
+  "brand": { "@type": "Brand", "name": "GStack" },
+  "offers": [
+    { "@type": "Offer", "name": "Free", "price": "0", "priceCurrency": "USD" },
+    { "@type": "Offer", "name": "Pro", "price": "29", "priceCurrency": "USD", "priceSpecification": { "@type": "UnitPriceSpecification", "priceCurrency": "USD", "price": "29", "unitCode": "MON" } },
+    { "@type": "Offer", "name": "Enterprise", "price": "199", "priceCurrency": "USD", "priceSpecification": { "@type": "UnitPriceSpecification", "priceCurrency": "USD", "price": "199", "unitCode": "MON" } }
+  ]
+}
+</script>
+<style>
+  :root{
+    --blue-50:#EFF6FF;  --blue-100:#DBEAFE; --blue-200:#BFDBFE;
+    --blue-500:#3B82F6; --blue-600:#2563EB; --blue-700:#1D4ED8;
+    --orange-50:#FFF7ED; --orange-600:#EA580C; --orange-700:#C2410C;
+    --slate-50:#F8FAFC; --slate-100:#F1F5F9; --slate-200:#E2E8F0;
+    --slate-300:#CBD5E1; --slate-400:#94A3B8; --slate-500:#64748B;
+    --slate-600:#475569; --slate-700:#334155; --slate-800:#1E293B; --slate-900:#0F172A;
+    --surface:#FFFFFF; --surface-alt:#F8FAFC;
+    --text:#0F172A; --text-secondary:#475569; --text-muted:#64748B;
+    --border:#E2E8F0; --border-strong:#CBD5E1;
+    --space-1:4px; --space-2:8px; --space-3:12px; --space-4:16px;
+    --space-5:24px; --space-6:32px; --space-8:48px; --space-10:64px; --space-12:96px;
+    --fs-overline:12px; --fs-caption:14px; --fs-body:16px;
+    --fs-h3:20px; --fs-h2:24px; --fs-h1:32px; --fs-display:40px;
+    --radius-sm:6px; --radius-md:10px; --radius-lg:16px; --radius-pill:999px;
+    --shadow-sm:0 1px 2px rgba(15,23,42,.06),0 1px 3px rgba(15,23,42,.08);
+    --shadow-md:0 4px 6px -2px rgba(15,23,42,.06),0 10px 15px -3px rgba(15,23,42,.10);
+    --shadow-lg:0 10px 25px -5px rgba(15,23,42,.12),0 8px 10px -6px rgba(15,23,42,.06);
+    --font-sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,
+                "PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",sans-serif;
+    --container:1120px; --header-h:64px;
+  }
+  *,*::before,*::after{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;}
+  body{margin:0;font-family:var(--font-sans);font-size:var(--fs-body);line-height:1.6;
+       color:var(--text);background:var(--surface);-webkit-font-smoothing:antialiased;}
+  h1,h2,h3,h4,p,figure,ul,ol{margin:0;}
+  ul,ol{padding:0;list-style:none;}
+  a{color:var(--blue-700);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  img,svg{display:block;max-width:100%;}
+  button{font:inherit;color:inherit;cursor:pointer;}
+
+  .skip-link{position:absolute;left:var(--space-4);top:-100px;z-index:200;
+    background:var(--blue-700);color:#fff;padding:10px 16px;border-radius:var(--radius-md);transition:top .2s ease;}
+  .skip-link:focus{top:var(--space-4);}
+  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+  :focus-visible{outline:3px solid var(--blue-600);outline-offset:2px;border-radius:var(--radius-sm);}
+
+  .container{width:100%;max-width:var(--container);margin-inline:auto;padding-inline:var(--space-4);}
+  .section{padding-block:var(--space-10);}
+  .section--alt{background:var(--surface-alt);}
+  .section-head{max-width:680px;margin-bottom:var(--space-8);}
+  .section-head.center{margin-inline:auto;text-align:center;}
+  .eyebrow{display:inline-flex;align-items:center;gap:var(--space-2);
+    font-size:var(--fs-overline);font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--blue-700);background:var(--blue-50);padding:6px 12px;border-radius:var(--radius-pill);}
+  .eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--orange-600);}
+  h1,h2,h3{line-height:1.2;color:var(--slate-900);font-weight:800;letter-spacing:-.01em;}
+  h1{font-size:var(--fs-display);} h2{font-size:var(--fs-h2);} h3{font-size:var(--fs-h3);font-weight:700;}
+  .lead{font-size:var(--fs-h3);color:var(--text-secondary);line-height:1.5;margin-top:var(--space-4);}
+  .section-head p{color:var(--text-secondary);margin-top:var(--space-4);font-size:var(--fs-caption);}
+  .measure{max-width:65ch;}
+
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:var(--space-2);
+    min-height:44px;padding:0 22px;border:1px solid transparent;border-radius:var(--radius-md);
+    font-size:var(--fs-body);font-weight:600;line-height:1;white-space:nowrap;
+    transition:background .18s ease,border-color .18s ease,transform .18s ease;}
+  .btn:hover{text-decoration:none;}
+  .btn-primary{background:var(--blue-600);color:#fff;}
+  .btn-primary:hover{background:var(--blue-700);}
+  .btn-secondary{background:var(--surface);color:var(--blue-700);border-color:var(--border-strong);}
+  .btn-secondary:hover{background:var(--slate-50);border-color:var(--slate-400);}
+  .btn-ghost{background:transparent;color:var(--blue-700);min-height:44px;padding:0 12px;}
+  .btn-ghost:hover{text-decoration:underline;}
+  .btn-lg{min-height:52px;padding:0 28px;font-size:var(--fs-h3);}
+  .btn-block{width:100%;}
+  .btn:active{transform:translateY(1px);}
+
+  .site-header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.92);
+    backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid transparent;
+    transition:box-shadow .2s ease,border-color .2s ease;}
+  .site-header.scrolled{box-shadow:var(--shadow-sm);border-color:var(--border);}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:var(--header-h);}
+  .brand{display:inline-flex;align-items:center;gap:var(--space-2);font-weight:800;
+    font-size:var(--fs-h3);color:var(--slate-900);letter-spacing:-.02em;}
+  .brand:hover{text-decoration:none;}
+  .brand .logo{width:32px;height:32px;flex:none;}
+  .nav-links{display:none;align-items:center;gap:var(--space-2);}
+  .nav-links a.nav-link{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;
+    color:var(--slate-700);font-weight:600;font-size:var(--fs-caption);border-radius:var(--radius-md);}
+  .nav-links a.nav-link:hover{background:var(--slate-50);text-decoration:none;color:var(--slate-900);}
+  .nav-links a[aria-current="page"]{color:var(--blue-700);}
+  .nav-actions{display:flex;align-items:center;gap:var(--space-2);}
+  .hamburger{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;
+    border:1px solid var(--border-strong);border-radius:var(--radius-md);background:var(--surface);}
+  .hamburger svg{width:22px;height:22px;}
+  .mobile-menu{display:none;flex-direction:column;gap:var(--space-1);padding:var(--space-3) var(--space-4) var(--space-5);
+    border-bottom:1px solid var(--border);background:var(--surface);box-shadow:var(--shadow-md);}
+  .mobile-menu.open{display:flex;}
+  .mobile-menu a{display:flex;align-items:center;min-height:48px;padding:0 12px;border-radius:var(--radius-md);
+    color:var(--slate-700);font-weight:600;}
+  .mobile-menu a:hover{background:var(--slate-50);text-decoration:none;}
+  .mobile-menu a[aria-current="page"]{color:var(--blue-700);background:var(--blue-50);}
+  .mobile-menu .btn{width:100%;margin-top:var(--space-2);}
+
+  /* ===== Product hero ===== */
+  .breadcrumb{display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-2);font-size:var(--fs-caption);
+    color:var(--text-muted);margin-bottom:var(--space-5);}
+  .breadcrumb a{color:var(--text-muted);} .breadcrumb a:hover{color:var(--blue-700);}
+  .breadcrumb span[aria-current]{color:var(--slate-700);font-weight:600;}
+  .product-hero{display:grid;gap:var(--space-8);align-items:center;}
+  .product-hero .badges{display:flex;flex-wrap:wrap;gap:var(--space-2);margin-top:var(--space-5);}
+  .pill{display:inline-flex;align-items:center;gap:var(--space-2);font-size:var(--fs-caption);font-weight:600;
+    background:var(--slate-100);color:var(--slate-700);padding:6px 14px;border-radius:var(--radius-pill);}
+  .pill svg{width:16px;height:16px;color:var(--blue-600);}
+  .product-cta{display:flex;flex-wrap:wrap;gap:var(--space-3);margin-top:var(--space-6);}
+  .shot{background:linear-gradient(135deg,#0F172A,#1E293B);border-radius:var(--radius-lg);
+    padding:var(--space-4);box-shadow:var(--shadow-lg);}
+  .shot svg{width:100%;height:auto;border-radius:var(--radius-sm);}
+
+  /* ===== Tabs ===== */
+  .tablist{display:flex;flex-wrap:wrap;gap:var(--space-2);border-bottom:1px solid var(--border);margin-bottom:var(--space-6);}
+  .tablist [role="tab"]{border:none;background:transparent;color:var(--slate-600);font-weight:700;
+    font-size:var(--fs-caption);padding:0 4px var(--space-3);margin-right:var(--space-5);
+    border-bottom:3px solid transparent;min-height:44px;display:inline-flex;align-items:center;}
+  .tablist [role="tab"][aria-selected="true"]{color:var(--blue-700);border-bottom-color:var(--blue-600);}
+  .tablist [role="tab"]:hover{color:var(--slate-900);}
+  .tabpanel{display:none;}
+  .tabpanel.active{display:grid;gap:var(--space-8);align-items:center;}
+  .tabpanel .copy h3{margin-bottom:var(--space-3);}
+  .tabpanel .copy ul{display:flex;flex-direction:column;gap:var(--space-3);margin-top:var(--space-4);}
+  .tabpanel .copy li{display:flex;gap:var(--space-3);align-items:flex-start;font-size:var(--fs-caption);color:var(--text-secondary);}
+  .tabpanel .copy li svg{flex:none;width:20px;height:20px;color:var(--blue-600);margin-top:2px;}
+
+  /* ===== Spec / compare table ===== */
+  .table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  table.compare{width:100%;border-collapse:collapse;min-width:560px;font-size:var(--fs-caption);}
+  table.compare th,table.compare td{padding:var(--space-4) var(--space-5);text-align:left;border-bottom:1px solid var(--border);}
+  table.compare thead th{background:var(--slate-50);color:var(--slate-900);font-weight:800;position:sticky;top:0;}
+  table.compare tbody th{font-weight:700;color:var(--slate-800);}
+  table.compare td.col-featured,table.compare th.col-featured{background:var(--blue-50);}
+  table.compare .yes{color:var(--blue-600);font-weight:800;}
+  table.compare .no{color:var(--slate-400);}
+  table.compare caption{text-align:left;color:var(--text-muted);font-size:var(--fs-caption);padding-bottom:var(--space-3);}
+
+  /* ===== Related ===== */
+  .grid-3{display:grid;gap:var(--space-5);}
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);
+    padding:var(--space-6);box-shadow:var(--shadow-sm);transition:box-shadow .2s ease,transform .2s ease;}
+  .card:hover{box-shadow:var(--shadow-md);transform:translateY(-2px);}
+  .card .kicker{font-size:var(--fs-overline);font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--orange-700);}
+  .card h3{margin:var(--space-2) 0;}
+  .card p{color:var(--text-secondary);font-size:var(--fs-caption);}
+  .card .more{display:inline-flex;align-items:center;gap:var(--space-1);margin-top:var(--space-4);font-weight:700;color:var(--blue-700);}
+  .card .more svg{width:16px;height:16px;}
+
+  /* ===== FAQ ===== */
+  .faq{max-width:760px;margin-inline:auto;display:flex;flex-direction:column;gap:var(--space-3);}
+  .faq-item{border:1px solid var(--border);border-radius:var(--radius-md);background:var(--surface);overflow:hidden;}
+  .faq-q{width:100%;text-align:left;background:transparent;border:none;padding:var(--space-4) var(--space-5);
+    display:flex;align-items:center;justify-content:space-between;gap:var(--space-4);
+    font-weight:700;font-size:var(--fs-caption);color:var(--slate-900);min-height:56px;}
+  .faq-q .chev{flex:none;width:22px;height:22px;color:var(--slate-500);transition:transform .2s ease;}
+  .faq-q[aria-expanded="true"] .chev{transform:rotate(180deg);color:var(--blue-600);}
+  .faq-a{padding:0 var(--space-5) var(--space-5);color:var(--text-secondary);font-size:var(--fs-caption);}
+  .faq-a[hidden]{display:none;}
+
+  .cta-band{background:linear-gradient(135deg,var(--blue-600),var(--blue-700));
+    border-radius:var(--radius-lg);padding:var(--space-10) var(--space-6);text-align:center;color:#fff;box-shadow:var(--shadow-lg);}
+  .cta-band h2{color:#fff;}
+  .cta-band p{color:rgba(255,255,255,.88);margin-top:var(--space-3);font-size:var(--fs-h3);}
+  .cta-band .hero-cta{display:flex;flex-wrap:wrap;gap:var(--space-3);justify-content:center;margin-top:var(--space-6);}
+  .cta-band .btn-primary{background:#fff;color:var(--blue-700);}
+  .cta-band .btn-primary:hover{background:var(--blue-50);}
+  .cta-band .btn-secondary{background:transparent;color:#fff;border-color:rgba(255,255,255,.5);}
+  .cta-band .btn-secondary:hover{background:rgba(255,255,255,.12);border-color:#fff;}
+
+  .site-footer{background:var(--slate-900);color:var(--slate-300);padding-block:var(--space-10) var(--space-6);}
+  .footer-grid{display:grid;gap:var(--space-8);}
+  .footer-grid .brand{color:#fff;}
+  .footer-about{color:var(--slate-400);font-size:var(--fs-caption);max-width:38ch;margin-top:var(--space-3);}
+  .footer-col h4{color:#fff;font-size:var(--fs-caption);text-transform:uppercase;letter-spacing:.06em;margin-bottom:var(--space-3);}
+  .footer-col a{display:inline-flex;min-height:36px;align-items:center;color:var(--slate-400);font-size:var(--fs-caption);}
+  .footer-col a:hover{color:#fff;text-decoration:none;}
+  .footer-bottom{display:flex;flex-wrap:wrap;gap:var(--space-3);justify-content:space-between;align-items:center;
+    border-top:1px solid rgba(255,255,255,.1);margin-top:var(--space-8);padding-top:var(--space-5);
+    font-size:var(--fs-caption);color:var(--slate-500);}
+  .footer-bottom a{color:var(--slate-400);}
+
+  @media (min-width:640px){ .container{padding-inline:var(--space-6);} }
+  @media (min-width:768px){
+    .nav-links{display:flex;}
+    .hamburger{display:none;}
+    .product-hero{grid-template-columns:1.05fr .95fr;}
+    .tabpanel.active{grid-template-columns:1fr 1fr;}
+    .grid-3{grid-template-columns:repeat(3,1fr);}
+  }
+  @media (min-width:1024px){
+    .section{padding-block:var(--space-12);}
+    .footer-grid{grid-template-columns:2fr 1fr 1fr 1fr;}
+    h1{font-size:48px;} h2{font-size:var(--fs-h1);}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important;scroll-behavior:auto!important;}
+  }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">跳到主内容</a>
+
+<header class="site-header" id="header">
+  <div class="container">
+    <nav class="nav" aria-label="主导航">
+      <a class="brand" href="index.html" aria-label="GStack 首页">
+        <svg class="logo" viewBox="0 0 32 32" role="img" aria-label="GStack 标志" fill="none">
+          <rect x="2" y="2" width="28" height="28" rx="8" fill="#2563EB"/>
+          <path d="M10 21V11h7M10 16h5" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>
+          <circle cx="22" cy="20" r="3" fill="#F97316"/>
+        </svg>
+        GStack
+      </a>
+      <ul class="nav-links">
+        <li><a class="nav-link" href="index.html">首页</a></li>
+        <li><a class="nav-link" href="product.html" aria-current="page">产品</a></li>
+        <li><a class="nav-link" href="pricing.html">定价</a></li>
+        <li><a class="nav-link" href="index.html#features">功能</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a class="btn-ghost" href="#login">登录</a>
+        <a class="btn btn-primary" href="#start">免费开始</a>
+        <button class="hamburger" id="menuToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="打开菜单">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </nav>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">首页</a>
+    <a href="product.html" aria-current="page">产品</a>
+    <a href="pricing.html">定价</a>
+    <a href="index.html#features">功能</a>
+    <a class="btn btn-primary" href="#start">免费开始</a>
+  </div>
+</header>
+
+<main id="main">
+  <!-- PRODUCT HERO -->
+  <section class="section" aria-labelledby="product-title">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="面包屑">
+        <a href="index.html">首页</a><span aria-hidden="true">/</span>
+        <a href="product.html">产品</a><span aria-hidden="true">/</span>
+        <span aria-current="page">增长工作台</span>
+      </nav>
+      <div class="product-hero">
+        <div>
+          <span class="eyebrow">核心产品</span>
+          <h1 id="product-title" style="margin-top:var(--space-4)">GStack 增长工作台</h1>
+          <p class="lead measure">一个把建站、支付、合规与增长分析串起来的控制台。让独立开发者用更少的时间，把产品卖到更多国家。</p>
+          <div class="badges">
+            <span class="pill"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l4 4 10-10" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>12 种语言</span>
+            <span class="pill"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l4 4 10-10" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>135+ 币种</span>
+            <span class="pill"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l4 4 10-10" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>99.9% SLA</span>
+          </div>
+          <div class="product-cta">
+            <a class="btn btn-primary btn-lg" href="#start">免费开始</a>
+            <a class="btn btn-secondary btn-lg" href="pricing.html">查看定价</a>
+          </div>
+        </div>
+        <div class="shot" aria-hidden="false">
+          <svg viewBox="0 0 480 300" role="img" aria-label="产品界面截图占位：左侧导航与收入看板">
+            <rect x="0" y="0" width="480" height="300" rx="10" fill="#0F172A"/>
+            <rect x="0" y="0" width="120" height="300" fill="#1E293B"/>
+            <rect x="20" y="22" width="80" height="12" rx="6" fill="#334155"/>
+            <rect x="20" y="60" width="80" height="10" rx="5" fill="#2563EB"/>
+            <rect x="20" y="84" width="80" height="10" rx="5" fill="#334155"/>
+            <rect x="20" y="108" width="80" height="10" rx="5" fill="#334155"/>
+            <rect x="148" y="22" width="160" height="14" rx="7" fill="#E2E8F0"/>
+            <rect x="148" y="52" width="312" height="90" rx="10" fill="#1E293B"/>
+            <rect x="168" y="74" width="70" height="8" rx="4" fill="#64748B"/>
+            <rect x="168" y="92" width="110" height="22" rx="6" fill="#2563EB"/>
+            <rect x="300" y="92" width="14" height="22" rx="4" fill="#EA580C"/>
+            <rect x="148" y="160" width="150" height="116" rx="10" fill="#1E293B"/>
+            <rect x="312" y="160" width="148" height="116" rx="10" fill="#1E293B"/>
+            <polyline points="168,250 200,220 232,236 264,200 296,218" fill="none" stroke="#3B82F6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="360" cy="210" r="22" fill="none" stroke="#EA580C" stroke-width="6" stroke-dasharray="90 40"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURE TABS -->
+  <section class="section section--alt" aria-labelledby="feat-title">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">功能要点</span>
+        <h2 id="feat-title" style="margin-top:var(--space-4)">一套工作台，覆盖出海全链路</h2>
+      </div>
+
+      <div class="tabs">
+        <div class="tablist" role="tablist" aria-label="功能要点分类">
+          <button role="tab" id="tab-1" aria-selected="true" aria-controls="panel-1">多语言建站</button>
+          <button role="tab" id="tab-2" aria-selected="false" aria-controls="panel-2" tabindex="-1">全球支付</button>
+          <button role="tab" id="tab-3" aria-selected="false" aria-controls="panel-3" tabindex="-1">增长分析</button>
+        </div>
+
+        <div class="tabpanel active" id="panel-1" role="tabpanel" aria-labelledby="tab-1" tabindex="0">
+          <div class="copy">
+            <h3>几分钟上线多语言站点</h3>
+            <p>一套内容源，自动生成 12 种语言的本地化页面，SEO 与货币随访客地区自适应。</p>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l4 4 10-10" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>可视化编辑器，无需写代码</li>
+              <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l4 4 10-10" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>自动 hreflang 与多地区 SEO</li>
+              <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l4 4 10-10" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>内置 CDN，全球访问更快</li>
+            </ul>
+          </div>
+          <div class="shot" aria-hidden="true">
+            <svg viewBox="0 0 360 220" role="img" aria-label="建站编辑器示意">
+              <rect width="360" height="220" rx="8" fill="#0F172A"/>
+              <rect x="16" y="16" width="120" height="14" rx="7" fill="#E2E8F0"/>
+              <rect x="16" y="44" width="328" height="60" rx="8" fill="#1E293B"/>
+              <rect x="32" y="60" width="120" height="10" rx="5" fill="#334155"/>
+              <rect x="32" y="78" width="200" height="8" rx="4" fill="#334155"/>
+              <rect x="16" y="120" width="160" height="84" rx="8" fill="#1E293B"/>
+              <rect x="188" y="120" width="156" height="84" rx="8" fill="#1E293B"/>
+              <rect x="200" y="140" width="60" height="20" rx="6" fill="#2563EB"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="tabpanel" id="panel-2" role="tabpanel" aria-labelledby="tab-2" tabindex="0" hidden>
+          <div class="copy">
+            <h3>一处接入，全球收款</h3>
+            <p>对接 40+ 支付方式与 135+ 币种，自动换汇与税务计算，把对账工作量降到最低。</p>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l4 4 10-10" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Stripe / PayPal / 本地钱包</li>
+              <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l4 4 10-10" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>自动增值税 / 销售税</li>
+              <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l4 4 10-10" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>统一对账与退款管理</li>
+            </ul>
+          </div>
+          <div class="shot" aria-hidden="true">
+            <svg viewBox="0 0 360 220" role="img" aria-label="支付看板示意">
+              <rect width="360" height="220" rx="8" fill="#0F172A"/>
+              <rect x="16" y="16" width="160" height="14" rx="7" fill="#E2E8F0"/>
+              <rect x="16" y="48" width="104" height="64" rx="10" fill="#1E293B"/>
+              <rect x="32" y="64" width="50" height="8" rx="4" fill="#64748B"/>
+              <rect x="32" y="80" width="72" height="18" rx="6" fill="#2563EB"/>
+              <rect x="136" y="48" width="104" height="64" rx="10" fill="#1E293B"/>
+              <rect x="152" y="64" width="50" height="8" rx="4" fill="#64748B"/>
+              <rect x="152" y="80" width="60" height="18" rx="6" fill="#EA580C"/>
+              <rect x="256" y="48" width="88" height="64" rx="10" fill="#1E293B"/>
+              <rect x="272" y="64" width="50" height="8" rx="4" fill="#64748B"/>
+              <rect x="272" y="80" width="56" height="18" rx="6" fill="#3B82F6"/>
+              <rect x="16" y="128" width="328" height="76" rx="10" fill="#1E293B"/>
+              <polyline points="36,184 90,160 144,172 198,146 252,164 306,140" fill="none" stroke="#3B82F6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="tabpanel" id="panel-3" role="tabpanel" aria-labelledby="tab-3" tabindex="0" hidden>
+          <div class="copy">
+            <h3>用数据指导增长</h3>
+            <p>统一漏斗、留存与收入看板，按国家与渠道拆分，让每一次决策都有依据。</p>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l4 4 10-10" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>实时收入与留存看板</li>
+              <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l4 4 10-10" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>渠道与国家维度对比</li>
+              <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l4 4 10-10" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>可自定义的周报与告警</li>
+            </ul>
+          </div>
+          <div class="shot" aria-hidden="true">
+            <svg viewBox="0 0 360 220" role="img" aria-label="分析看板示意">
+              <rect width="360" height="220" rx="8" fill="#0F172A"/>
+              <rect x="16" y="16" width="160" height="14" rx="7" fill="#E2E8F0"/>
+              <rect x="16" y="48" width="160" height="156" rx="10" fill="#1E293B"/>
+              <rect x="36" y="170" width="22" height="20" rx="4" fill="#2563EB"/>
+              <rect x="70" y="150" width="22" height="40" rx="4" fill="#3B82F6"/>
+              <rect x="104" y="120" width="22" height="70" rx="4" fill="#2563EB"/>
+              <rect x="138" y="96" width="22" height="94" rx="4" fill="#EA580C"/>
+              <rect x="192" y="48" width="152" height="74" rx="10" fill="#1E293B"/>
+              <circle cx="240" cy="85" r="22" fill="none" stroke="#EA580C" stroke-width="6" stroke-dasharray="100 40"/>
+              <rect x="192" y="130" width="152" height="74" rx="10" fill="#1E293B"/>
+              <polyline points="212,184 250,166 288,176 326,150" fill="none" stroke="#3B82F6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPEC / COMPARE -->
+  <section class="section" aria-labelledby="spec-title">
+    <div class="container">
+      <div class="section-head">
+        <h2 id="spec-title">方案能力对比</h2>
+        <p>不同方案包含的核心能力一览，按需选择。</p>
+      </div>
+      <div class="table-wrap">
+        <table class="compare">
+          <caption>对比基于当前公开的方案能力</caption>
+          <thead>
+            <tr>
+              <th scope="col">能力</th>
+              <th scope="col">入门</th>
+              <th scope="col" class="col-featured">专业</th>
+              <th scope="col">企业</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">站点数量</th><td>1</td><td class="col-featured">5</td><td>无限</td></tr>
+            <tr><th scope="row">支持语言</th><td>3</td><td class="col-featured">12</td><td>全部</td></tr>
+            <tr><th scope="row">支付渠道</th><td>基础</td><td class="col-featured">全渠道</td><td>全渠道 + 定制</td></tr>
+            <tr><th scope="row">税务自动申报</th><td class="no">—</td><td class="col-featured yes">✓</td><td class="yes">✓</td></tr>
+            <tr><th scope="row">高级增长分析</th><td class="no">—</td><td class="col-featured yes">✓</td><td class="yes">✓</td></tr>
+            <tr><th scope="row">SSO / 审计日志</th><td class="no">—</td><td class="col-featured no">—</td><td class="yes">✓</td></tr>
+            <tr><th scope="row">专属客户成功</th><td class="no">—</td><td class="col-featured no">—</td><td class="yes">✓</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED -->
+  <section class="section section--alt" aria-labelledby="rel-title">
+    <div class="container">
+      <div class="section-head">
+        <h2 id="rel-title">相关产品</h2>
+        <p>围绕出海场景，GStack 还有这些能力。</p>
+      </div>
+      <div class="grid-3">
+        <article class="card">
+          <span class="kicker">合规</span>
+          <h3>税务助手</h3>
+          <p>自动计算并申报跨境增值税与销售税，生成合规发票，降低经营风险。</p>
+          <a class="more" href="#tax">了解更多 <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </article>
+        <article class="card">
+          <span class="kicker">增长</span>
+          <h3>邮件自动化</h3>
+          <p>基于用户行为的自动化序列，把试用用户转化为付费客户，提升复购。</p>
+          <a class="more" href="#email">了解更多 <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </article>
+        <article class="card">
+          <span class="kicker">数据</span>
+          <h3>开放 API</h3>
+          <p>完整的 REST 与 Webhook 接口，把 GStack 嵌入你自己的工作流与产品。</p>
+          <a class="more" href="#api">了解更多 <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" aria-labelledby="faq-title">
+    <div class="container">
+      <div class="section-head center">
+        <h2 id="faq-title">产品常见问题</h2>
+      </div>
+      <div class="faq">
+        <div class="faq-item">
+          <button class="faq-q" id="pf1-q" aria-expanded="false" aria-controls="pf1-a">
+            GStack 适合多大的团队？
+            <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-a" id="pf1-a" role="region" aria-labelledby="pf1-q" hidden>
+            从个人开发者到数十人团队都适用。入门方案适合验证想法，专业与企业方案面向需要规模化与合规保障的团队。
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" id="pf2-q" aria-expanded="false" aria-controls="pf2-a">
+            数据是否安全？
+            <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-a" id="pf2-a" role="region" aria-labelledby="pf2-q" hidden>
+            所有数据传输与存储均加密，企业方案提供 SSO、审计日志与 99.9% SLA 保障，符合主流安全标准。
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" id="pf3-q" aria-expanded="false" aria-controls="pf3-a">
+            能否迁移现有站点？
+            <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-a" id="pf3-a" role="region" aria-labelledby="pf3-q" hidden>
+            可以。我们提供导入工具与开放 API，支持从常见建站平台批量迁移内容与订单，迁移过程有文档与工单支持。
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" aria-labelledby="cta-title">
+    <div class="container">
+      <div class="cta-band">
+        <h2 id="cta-title">把产品卖给全世界</h2>
+        <p>14 天免费试用，无需信用卡。</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary btn-lg" href="#start">免费开始</a>
+          <a class="btn btn-secondary btn-lg" href="pricing.html">查看定价</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html" aria-label="GStack 首页">
+          <svg class="logo" viewBox="0 0 32 32" role="img" aria-label="GStack 标志" fill="none">
+            <rect x="2" y="2" width="28" height="28" rx="8" fill="#2563EB"/>
+            <path d="M10 21V11h7M10 16h5" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>
+            <circle cx="22" cy="20" r="3" fill="#F97316"/>
+          </svg>
+          GStack
+        </a>
+        <p class="footer-about">面向独立开发者的出海增长平台。建站、支付、合规、增长，一套搞定。</p>
+      </div>
+      <nav class="footer-col" aria-label="产品">
+        <h4>产品</h4>
+        <a href="product.html">功能概览</a>
+        <a href="pricing.html">定价</a>
+        <a href="#changelog">更新日志</a>
+      </nav>
+      <nav class="footer-col" aria-label="资源">
+        <h4>资源</h4>
+        <a href="#docs">开发文档</a>
+        <a href="#blog">博客</a>
+        <a href="#support">支持中心</a>
+      </nav>
+      <nav class="footer-col" aria-label="公司">
+        <h4>公司</h4>
+        <a href="#about">关于我们</a>
+        <a href="#contact">联系</a>
+        <a href="#privacy">隐私政策</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 GStack. 保留所有权利。</span>
+      <span><a href="#terms">服务条款</a> · <a href="#privacy">隐私</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    "use strict";
+    var toggle=document.getElementById("menuToggle"),menu=document.getElementById("mobileMenu");
+    if(toggle&&menu){
+      toggle.addEventListener("click",function(){
+        var open=menu.classList.toggle("open");
+        toggle.setAttribute("aria-expanded",open?"true":"false");
+        toggle.setAttribute("aria-label",open?"关闭菜单":"打开菜单");
+      });
+      menu.querySelectorAll("a").forEach(function(a){a.addEventListener("click",function(){
+        menu.classList.remove("open");toggle.setAttribute("aria-expanded","false");toggle.setAttribute("aria-label","打开菜单");
+      });});
+    }
+    var header=document.getElementById("header");
+    var onScroll=function(){header.classList.toggle("scrolled",window.scrollY>8);};
+    window.addEventListener("scroll",onScroll,{passive:true});onScroll();
+
+    // Tabs：点击 + 键盘方向键，管理 aria-selected / tabindex / 面板显隐
+    var tabs=Array.prototype.slice.call(document.querySelectorAll('[role="tab"]'));
+    function selectTab(tab,focus){
+      tabs.forEach(function(t){
+        var sel=t===tab;
+        t.setAttribute("aria-selected",sel?"true":"false");
+        t.tabIndex=sel?0:-1;
+        var panel=document.getElementById(t.getAttribute("aria-controls"));
+        if(panel){panel.hidden=!sel;panel.classList.toggle("active",sel);}
+      });
+      if(focus) tab.focus();
+    }
+    tabs.forEach(function(tab,i){
+      tab.addEventListener("click",function(){selectTab(tab,false);});
+      tab.addEventListener("keydown",function(e){
+        var idx=i;
+        if(e.key==="ArrowRight"||e.key==="ArrowDown"){idx=(i+1)%tabs.length;}
+        else if(e.key==="ArrowLeft"||e.key==="ArrowUp"){idx=(i-1+tabs.length)%tabs.length;}
+        else if(e.key==="Home"){idx=0;}
+        else if(e.key==="End"){idx=tabs.length-1;}
+        else return;
+        e.preventDefault();
+        selectTab(tabs[idx],true);
+      });
+    });
+
+    // FAQ 折叠
+    document.querySelectorAll(".faq-q").forEach(function(btn){
+      btn.addEventListener("click",function(){
+        var exp=btn.getAttribute("aria-expanded")==="true";
+        btn.setAttribute("aria-expanded",exp?"false":"true");
+        document.getElementById(btn.getAttribute("aria-controls")).hidden=exp;
+      });
+    });
+  })();
+</script>
+</body>
+</html>
