@@ -20,7 +20,7 @@ export default function AdminUsers() {
 
   return (
     <Layout title="用户管理">
-      <Head><title>用户管理 · GStack</title></Head>
+      <Head><title>用户管理 · GotoDeck</title></Head>
       <div className="mx-auto w-full max-w-5xl px-4 py-10">
         <div className="flex items-center justify-between">
           <h1 className="text-2xl font-bold text-slate-900">用户管理</h1>

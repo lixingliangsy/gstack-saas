@@ -1,4 +1,4 @@
-﻿# GStack 支付集成与产品发布指南
+﻿# GotoDeck 支付集成与产品发布指南
 
 ## 第一部分：生产环境 Webhook 配置
 
@@ -140,12 +140,12 @@ cloudflared tunnel --url http://localhost:3000
 ### 2.3 发布内容建议
 
 #### Product Hunt 发布
-- **标题**: GStack - Automated Compliance Scanner for Global SaaS
+- **标题**: GotoDeck - Automated Compliance Scanner for Global SaaS
 - **描述**: Auto-generate GDPR/VAT/consumer protection readiness reports for your SaaS in minutes
 - **标签**: SaaS, Compliance, Developer Tools
 
 #### Hacker News 提交
-- **标题**: Show HN: GStack - Open-source compliance scanner for SaaS going global
+- **标题**: Show HN: GotoDeck - Open-source compliance scanner for SaaS going global
 - **链接**: https://your-domain.com
 
 #### Reddit 发帖

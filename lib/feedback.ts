@@ -105,7 +105,7 @@ function getTransporter(): nodemailer.Transporter | null {
 export interface SendEmailOptions {
   /** 覆盖默认 FEEDBACK_TO_EMAIL；多产品实例用各自的 feedbackEmail */
   to?: string;
-  /** 邮件主题前缀，如 "[GStack 反馈]" / "[AIActRadar 反馈]" */
+  /** 邮件主题前缀，如 "[GotoDeck 反馈]" / "[AIActRadar 反馈]" */
   subjectPrefix?: string;
 }
 
@@ -113,7 +113,7 @@ export async function sendFeedbackEmail(fb: Feedback, opts: SendEmailOptions = {
   const t = getTransporter();
   if (!t) throw new Error("SMTP_NOT_CONFIGURED");
   const to = opts.to || process.env.FEEDBACK_TO_EMAIL || "lixingliangsy@163.com";
-  const prefix = opts.subjectPrefix || "[GStack 反馈]";
+  const prefix = opts.subjectPrefix || "[GotoDeck 反馈]";
   await t.sendMail({
     from: process.env.SMTP_FROM || to,
     to,

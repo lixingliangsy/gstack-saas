@@ -2,7 +2,7 @@
   "name": "gstack-saas",
   "version": "0.1.0",
   "private": true,
-  "description": "GStack 增长工作台 — 面向独立开发者的出海控制台（建站/支付/合规/增长分析）",
+  "description": "GotoDeck 增长工作台 — 面向独立开发者的出海控制台（建站/支付/合规/增长分析）",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

@@ -4,13 +4,13 @@ export default function Page() {
   return (
     <>
       <Head>
-        <title>GStack — Integrations & API</title>
-        <meta name="description" content="GStack integrations, export targets, REST API, and webhook documentation for growth teams going global." />
+        <title>GotoDeck — Integrations & API</title>
+        <meta name="description" content="GotoDeck integrations, export targets, REST API, and webhook documentation for growth teams going global." />
       </Head>
       <div className="min-h-screen bg-slate-50 text-slate-800">
         <header className="border-b border-slate-200 bg-white">
           <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
-            <a href="/" className="font-bold text-slate-900">GStack</a>
+            <a href="/" className="font-bold text-slate-900">GotoDeck</a>
             <nav className="hidden md:flex gap-6 text-sm font-semibold text-slate-500">
               <a href="/features" className="hover:text-slate-900">Features</a>
               <a href="/pricing" className="hover:text-slate-900">Pricing</a>
@@ -21,7 +21,7 @@ export default function Page() {
         </header>
         <main className="max-w-3xl mx-auto px-6 py-14">
           <h1 className="text-3xl font-bold text-slate-900">Integrations & API</h1>
-          <p className="mt-3 text-slate-600">Connect your stack, export anywhere, or automate with webhooks — GStack speaks the tools you already use.</p>
+          <p className="mt-3 text-slate-600">Connect your stack, export anywhere, or automate with webhooks — GotoDeck speaks the tools you already use.</p>
 
           <section className="mt-10">
             <h2 className="text-xl font-semibold text-slate-900">Native integrations</h2>
@@ -60,7 +60,7 @@ export default function Page() {
           <section className="mt-10">
             <h2 className="text-xl font-semibold text-slate-900">REST API</h2>
             <p className="mt-3 text-sm text-slate-600">
-              The GStack REST API is RESTful, rate-limited, and authenticated with bearer tokens generated from your workspace settings.
+              The GotoDeck REST API is RESTful, rate-limited, and authenticated with bearer tokens generated from your workspace settings.
             </p>
             <ul className="mt-4 space-y-2 text-sm text-slate-600 list-disc pl-6">
               <li>Base URL: <code className="rounded bg-slate-100 px-1.5 py-0.5 text-xs">https://api.gstack.io/v1</code></li>

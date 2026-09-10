@@ -1,4 +1,4 @@
-﻿# GStack Growth Console — Integrations
+﻿# GotoDeck Growth Console — Integrations
 
 - **Export targets:** JSON download, CSV export, copy-to-clipboard for compliance briefs and analytics reports.
 - **API + webhooks:** available on Pro/Enterprise for pipeline embedding — trigger a compliance scan, receive payment events, or push analytics to your data warehouse.

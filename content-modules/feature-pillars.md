@@ -1,4 +1,4 @@
-﻿# GStack Growth Console — Feature pillars
+﻿# GotoDeck Growth Console — Feature pillars
 
 - **Build — Landing pages, blogs, and SEO pages generated in one click**, optimized for AI search and multi-market distribution.
 - **Pay — Subscription billing via Waffo**, covering major EU and North American markets without setting up individual merchant accounts.

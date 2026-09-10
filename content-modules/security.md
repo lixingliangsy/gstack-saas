@@ -1,7 +1,7 @@
-﻿# GStack Growth Console — Security & compliance
+﻿# GotoDeck Growth Console — Security & compliance
 
 ## What we handle
-GStack processes the product descriptions, market data, and usage information you submit to produce compliance briefs, route payments, and generate analytics. We do not train public models on your submissions without explicit consent.
+GotoDeck processes the product descriptions, market data, and usage information you submit to produce compliance briefs, route payments, and generate analytics. We do not train public models on your submissions without explicit consent.
 
 ## Data handling commitments
 - Inputs are used only to produce your compliance brief and operate your account; not published or indexed by us.
@@ -11,8 +11,8 @@ GStack processes the product descriptions, market data, and usage information yo
 
 ## Compliance posture
 - **GDPR / UK-GDPR** aligned data handling (lawful basis, data minimization, access on request, right to erasure). [ref: GDPR](https://gdpr.eu/)
-- **EU VAT & OSS** — GStack maps VAT obligations for digital services sold within the EU and references the One-Stop Shop scheme where applicable. [ref: EU VAT](https://ec.europa.eu/taxation_customs/vat-oss_en)
-- **PCI-DSS** — payment card data is handled by Waffo's PCI-DSS compliant infrastructure; GStack does not touch raw card data. [ref: PCI-DSS](https://www.pcisecuritystandards.org/)
+- **EU VAT & OSS** — GotoDeck maps VAT obligations for digital services sold within the EU and references the One-Stop Shop scheme where applicable. [ref: EU VAT](https://ec.europa.eu/taxation_customs/vat-oss_en)
+- **PCI-DSS** — payment card data is handled by Waffo's PCI-DSS compliant infrastructure; GotoDeck does not touch raw card data. [ref: PCI-DSS](https://www.pcisecuritystandards.org/)
 - **OWASP** guidance applied for web app security and LLM prompt-injection hygiene. [ref: OWASP](https://owasp.org/)
 - **SCCs / adequacy decisions** referenced for cross-border data transfer from EU to non-EU jurisdictions.
 

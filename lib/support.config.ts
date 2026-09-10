@@ -1,5 +1,5 @@
 /**
- * lib/support.config.ts —— GStack 的 SupportConfig 实例（多产品环境下唯一的差异文件之一）
+ * lib/support.config.ts —— GotoDeck 的 SupportConfig 实例（多产品环境下唯一的差异文件之一）
  *
  * 复用试点（AIActRadar / AgentRedTeam）只需复制本文件并修改以下字段：
  * - productSlug / productName / feedbackEmail / chatHost
@@ -14,7 +14,7 @@ import type { SupportConfig } from "./support-kit/types";
 
 export const SUPPORT: SupportConfig = {
   productSlug: "gstack",
-  productName: "GStack 增长工作台",
+  productName: "GotoDeck 增长工作台",
   feedbackEmail: process.env.FEEDBACK_TO_EMAIL || "lixingliangsy@163.com",
   kb: KB,
   chatHost: process.env.APP_URL || "https://gstack.example.com",

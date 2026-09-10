@@ -1,6 +1,6 @@
 # support-kit —— 多产品 AI 客服 + 反馈 共享支撑包
 
-> 蒸馏自 GStack 已落地的 AIActRadar 复用试点。两类目标产品（AIActRadar / AgentRedTeam / 后续…）
+> 蒸馏自 GotoDeck 已落地的 AIActRadar 复用试点。两类目标产品（AIActRadar / AgentRedTeam / 后续…）
 > 接入本 kit，仅需「填空 `support.config.ts`」+「填 KB 条目」，其余代码零修改。
 
 ## 1. 包结构
@@ -16,7 +16,7 @@ support-kit/
 │       ├── core.ts                   # 五步：retrieve → memory → generate → guardrails → escalate
 │       ├── guardrails.ts             # H1–H5 诚实护栏
 │       └── memory.ts                 # 会话记忆 + TTL
-├── components/ChatWidget.tsx         # 浮动/全屏客服组件（默认参数为 GStack；通过 props 注入产品信息）
+├── components/ChatWidget.tsx         # 浮动/全屏客服组件（默认参数为 GotoDeck；通过 props 注入产品信息）
 ├── public/widget.js                  # 跨站嵌入脚本（vanilla JS，按 data-product 路由）
 ├── templates/                        # 用户填空用模板
 │   ├── support.config.ts             # ← 必填
@@ -99,7 +99,7 @@ node support-kit/scaffold.mjs \
 
 > 详细见 https://turbo.build/repo/docs/handbook/linting/typescript 与 https://turborepo.com/docs/handbook/linting/typescript —— 推荐 **composite + project references** 作为长期演进方向；短期落地用 **exclude**（最低阻力）。
 
-**实施**：每个接入产品的 `tsconfig.json` 在 `"exclude"` 数组中追加 `"support-kit/**"`（参考 GStack / AIActRadar / AgentRedTeam 现状）。
+**实施**：每个接入产品的 `tsconfig.json` 在 `"exclude"` 数组中追加 `"support-kit/**"`（参考 GotoDeck / AIActRadar / AgentRedTeam 现状）。
 
 ### 4.5.2 scaffold 永远不动 `_app.tsx`
 
@@ -139,12 +139,12 @@ node support-kit/scaffold.mjs \
 
 > AI 负责 **加速与结构化**（草稿生成、引用对仗、跨语言对齐），不负责 **最终事实**。
 
-**实施**：scaffold 只写 1 条占位 `SUPPORT_KB_FILL_ME`，注释明确"不得保留上线"。验证产物见 GStack 14 条 / AIActRadar 10 条 / AgentRedTeam 12 条真实 FAQ。
+**实施**：scaffold 只写 1 条占位 `SUPPORT_KB_FILL_ME`，注释明确"不得保留上线"。验证产物见 GotoDeck 14 条 / AIActRadar 10 条 / AgentRedTeam 12 条真实 FAQ。
 
 ## 5. 已落地试点
 
 | 产品 | 路径 | 是否通过 §4 |
 |------|------|--------------|
-| GStack | `E:/AgentCPM/07_一人公司出海项目/gstack-saas/` | ✅ tsc+build 双绿；T1/T2/T4 烟测全过 |
+| GotoDeck | `E:/AgentCPM/07_一人公司出海项目/gstack-saas/` | ✅ tsc+build 双绿；T1/T2/T4 烟测全过 |
 | AIActRadar | `E:/AgentCPM/07_一人公司出海项目/12_Micro_SaaS出海/aiactradar/` | ✅ tsc+build 双绿；T2（EU AI Act 时点）含 KB 引用；T4 400；T5 闲聊 → escalate |
 | AgentRedTeam | _待脚手架_ | — |

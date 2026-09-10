@@ -6,7 +6,7 @@ export default function FeedbackPage() {
   return (
     <Layout title="反馈">
       <Head>
-        <title>反馈 · GStack</title>
+        <title>反馈 · GotoDeck</title>
         <meta name="description" content="向我们提交反馈、建议或问题" />
       </Head>
       <div className="mx-auto w-full max-w-2xl px-4 py-10">

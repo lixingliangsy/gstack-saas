@@ -10,7 +10,7 @@ import { useEffect, useRef, useState } from "react";
  * - 展示知识库引用（cite）与「转人工」横幅，符合诚实护栏红线。
  *
  * 多产品复用：通过 props 注入 productName/title/greeting/sessionKeyPrefix/brandColor；
- * GStack 实例使用默认值，AIActRadar / AgentRedTeam 在各自 _app.tsx 传入独立 props 即可。
+ * GotoDeck 实例使用默认值，AIActRadar / AgentRedTeam 在各自 _app.tsx 传入独立 props 即可。
  */
 
 interface Citation {
@@ -27,7 +27,7 @@ interface ChatMsg {
 
 interface ChatWidgetProps {
   embed?: boolean;
-  /** 产品中文名，用于问候语；默认"GStack" */
+  /** 产品中文名，用于问候语；默认"GotoDeck" */
   productName?: string;
   /** 顶部标题文案；默认 `${productName} AI 客服` */
   title?: string;
@@ -44,7 +44,7 @@ const DEFAULT_ORANGE = "#EA580C";
 
 export default function ChatWidget({
   embed = false,
-  productName = "GStack",
+  productName = "GotoDeck",
   title,
   greeting,
   sessionKeyPrefix = "gstack",

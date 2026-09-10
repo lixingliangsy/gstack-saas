@@ -42,7 +42,7 @@ export default function AdminAnalytics() {
 
   return (
     <Layout title="数据看板">
-      <Head><title>数据看板 · GStack</title></Head>
+      <Head><title>数据看板 · GotoDeck</title></Head>
       <div className="mx-auto w-full max-w-5xl px-4 py-10">
         <div className="flex items-center justify-between">
           <h1 className="text-2xl font-bold text-slate-900">数据看板</h1>

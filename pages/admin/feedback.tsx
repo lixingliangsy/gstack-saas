@@ -33,7 +33,7 @@ export default function AdminFeedback() {
 
   return (
     <Layout title="反馈管理">
-      <Head><title>反馈管理 · GStack</title></Head>
+      <Head><title>反馈管理 · GotoDeck</title></Head>
       <div className="mx-auto w-full max-w-4xl px-4 py-10">
         <h1 className="text-2xl font-bold text-slate-900">用户反馈</h1>
         {forbidden && <p className="mt-4 rounded-lg bg-orange-50 p-4 text-sm text-orange-800">需要管理员权限。</p>}

@@ -36,7 +36,7 @@ export default function Signup() {
   return (
     <Layout title="注册">
       <Head>
-        <title>注册 · GStack</title>
+        <title>注册 · GotoDeck</title>
       </Head>
       <div className="mx-auto w-full max-w-sm px-4 py-16">
         <h1 className="text-2xl font-bold text-slate-900">创建账号</h1>

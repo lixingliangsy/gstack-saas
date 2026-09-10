@@ -1,11 +1,11 @@
-# GStack - llms.txt
+# GotoDeck - llms.txt
 
 > LLM-readable manifest following the https://llmstxt.org spec. What we are, who we serve, what we do, and how we price it - in plain text for AI agents and crawlers.
 
 ## Name & positioning
-- Product name: GStack
+- Product name: GotoDeck
 - Tagline: All-in-one growth console for going global
-- One-line value: GStack is an all-in-one growth console for indie developers and micro-SaaS teams going global — it combines site building, payments, compliance scanning, and growth analytics in one workspace.
+- One-line value: GotoDeck is an all-in-one growth console for indie developers and micro-SaaS teams going global — it combines site building, payments, compliance scanning, and growth analytics in one workspace.
 - Domain: https://gstack-saas.lxsaihub.com/
 - Language: English (en)
 
@@ -26,21 +26,21 @@ Compliance scanner covers GDPR / UK-GDPR / CCPA data duties, EU and UK VAT and t
 - Checkout: Waffo store `https://pancake.waffo.ai/store/STO_6p1cnwJDlk6gzVNUCQdWqN/gstack`
 
 ## FAQ (high-signal Q&A for AI citation)
-Q1. What is GStack?
-A1. GStack is an all-in-one growth console for indie developers and micro-SaaS teams going global — it combines site building, payments, compliance scanning, and growth analytics in one workspace.
+Q1. What is GotoDeck?
+A1. GotoDeck is an all-in-one growth console for indie developers and micro-SaaS teams going global — it combines site building, payments, compliance scanning, and growth analytics in one workspace.
 Q2. What are the four pillars?
 A2. Site building (landing pages, blog, and SEO tuned for AI search), payments (Waffo subscriptions), compliance (a market-access scanner), and growth analytics (Umami dashboards).
 Q3. How is it priced?
 A3. Free ($0) includes 10 compliance scans per month and a basic dashboard. Pro is $29/mo or $290/yr. Enterprise is $199/mo or $1990/yr.
 Q4. How do payments work?
-A4. GStack connects Waffo Pancake (merchant of record) so you can accept cards with monthly and annual billing; VAT is calculated at checkout.
+A4. GotoDeck connects Waffo Pancake (merchant of record) so you can accept cards with monthly and annual billing; VAT is calculated at checkout.
 Q5. What does the compliance scanner check?
 A5. GDPR / UK-GDPR / CCPA data duties, EU and UK VAT and the OSS scheme, consumer-protection rules, app-store policies, and PCI-DSS / SCA for payments.
-Q6. Who is GStack for?
+Q6. Who is GotoDeck for?
 A6. Independent developers, micro-SaaS teams, and global-expansion founders who want one toolkit instead of stitching five separate services.
 Q7. Which languages does it support?
 A7. The product is available in Simplified Chinese and English.
-Q8. Is GStack a website builder?
+Q8. Is GotoDeck a website builder?
 A8. Yes — it generates marketing sites and blogs with SEO and GEO (generative-engine-optimization) built in, so AI search engines can cite you.
 Q9. What analytics does it include?
 A9. Privacy-friendly Umami dashboards for usage, conversion, funnel, and retention.

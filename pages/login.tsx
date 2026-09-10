@@ -36,7 +36,7 @@ export default function Login() {
   return (
     <Layout title="登录">
       <Head>
-        <title>登录 · GStack</title>
+        <title>登录 · GotoDeck</title>
       </Head>
       <div className="mx-auto w-full max-w-sm px-4 py-16">
         <h1 className="text-2xl font-bold text-slate-900">登录</h1>

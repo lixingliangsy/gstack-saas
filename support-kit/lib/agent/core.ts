@@ -26,7 +26,7 @@ export interface AgentTurnInput {
   apiKey?: string;
   baseUrl?: string;
   model?: string;
-  /** 产品级配置（productName / kb / feedbackEmail 等）；缺省用 GStack 实例 */
+  /** 产品级配置（productName / kb / feedbackEmail 等）；缺省用 GotoDeck 实例 */
   config?: SupportConfig;
 }
 

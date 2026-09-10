@@ -19,7 +19,7 @@ export interface PricingTier {
 }
 
 export const PRODUCT = {
-  name: "GStack 增长工作台",
+  name: "GotoDeck 增长工作台",
   slug: "gstack",
   tagline: "把建站、支付、合规与增长分析串起来的出海控制台。让独立开发者用更少时间，把产品卖到更多国家。",
   /** Demo 模式：仅当用户主动勾选 + 环境允许时启用，绝不静默 mock（AIActRadar 红线） */

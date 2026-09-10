@@ -1,4 +1,4 @@
-﻿# GStack Growth Console — Page map
+﻿# GotoDeck Growth Console — Page map
 
 | Route | Source module | Purpose |
 |---|---|---|

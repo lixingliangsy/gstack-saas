@@ -1,4 +1,4 @@
-﻿# GStack Growth Console — Pricing
+﻿# GotoDeck Growth Console — Pricing
 
 | Tier | Price | What's included |
 |---|---|---|

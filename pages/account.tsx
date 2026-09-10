@@ -51,7 +51,7 @@ export default function Account() {
 
   return (
     <Layout title="账号">
-      <Head><title>账号 · GStack</title></Head>
+      <Head><title>账号 · GotoDeck</title></Head>
       <div className="mx-auto w-full max-w-2xl px-4 py-10">
         <h1 className="text-2xl font-bold text-slate-900">我的账号</h1>
         {user && (
