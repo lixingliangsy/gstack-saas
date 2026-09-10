@@ -7,4 +7,7 @@ Disallow: /api/admin/
 Disallow: /account
 Disallow: /embed/
 
-Sitemap: https://gstack.example.com/sitemap.xml
+# LLM / AI answer-engine indexing
+LLM-Content: https://gstack-saas.lxsaihub.com/llms.txt
+
+Sitemap: https://gstack-saas.lxsaihub.com/sitemap.xml

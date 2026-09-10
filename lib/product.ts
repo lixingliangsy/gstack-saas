@@ -76,7 +76,7 @@ export const PRODUCT = {
       features: ["合规扫描 每月 300 次", "完整增长看板 + 导出", "AI 客服知识库", "邮件支持"],
       featured: true,
       ctaLabel: "升级 Pro",
-      waffoProductId: { monthly: "PROD_6zFjdRqcdQQ2HqqhJVY3YR", yearly: "PROD_6zFjdRqcdQQ2HqqhJVY3YR" },
+      waffoProductId: { monthly: "PROD_1vc39RkO42bmrog52GWCrO", yearly: "PROD_5UW1AFD2nMVScYKwqhJG4L" },
       quota: { daily: 40, monthly: 300, maxTokens: 16000 },
     },
     {
@@ -87,7 +87,7 @@ export const PRODUCT = {
       tagline: "团队与合规刚需",
       features: ["不限合规扫描", "多席位 + 审计轨迹", "BYOK 自带密钥", "专属支持"],
       ctaLabel: "联系我们",
-      waffoProductId: { monthly: "PROD_3R2VzbiTwRJHaYsTo91PAB", yearly: "PROD_3R2VzbiTwRJHaYsTo91PAB" },
+      waffoProductId: { monthly: "PROD_1Ta3sqsfZrfOhnKzkuUiiz", yearly: "PROD_6Zqr4SFvvnqp2gKqytjakb" },
       quota: { daily: 200, monthly: 3000, maxTokens: 64000 },
     },
   ] as PricingTier[],

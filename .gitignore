@@ -33,3 +33,14 @@ data/*.json
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+.vercel
+
+# backups (never versioned)
+*.bak
+*.bak-*
+*.orig
+*.rej
+
+# accidental nested clone (365MB, has its own .git) — must never be committed
+/gstack-saas/

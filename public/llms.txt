@@ -1,50 +1,63 @@
-# GStack — llms.txt
+# GStack - llms.txt
 
-> LLM-readable manifest following https://llmstxt.org spec.
-> 用一句话告诉 AI 抓取者：我们是什么、面向谁、提供什么、如何定价。
+> LLM-readable manifest following the https://llmstxt.org spec. What we are, who we serve, what we do, and how we price it - in plain text for AI agents and crawlers.
 
-## 名称与定位
-- 产品名：GStack 增长工作台
-- 面向：独立开发者 / 微型 SaaS 团队 / 出海创业者
-- 一句话价值：把出海流程的「建站 → 支付 → 合规 → 增长」四件事串到一个控制台里
-- 域名：https://gstack.example.com
-- 语种：中文（简体）+ 英文
+## Name & positioning
+- Product name: GStack
+- Tagline: All-in-one growth console for going global
+- One-line value: GStack is an all-in-one growth console for indie developers and micro-SaaS teams going global — it combines site building, payments, compliance scanning, and growth analytics in one workspace.
+- Domain: https://gstack-saas.lxsaihub.com/
+- Language: English (en)
 
-## 核心能力（按支柱划分）
-1. **建站（Marketing site generator）** — 落地页 / 博客 / SEO 一键生成，针对 AI 搜索（GEO）优化
-2. **支付（Payments via Waffo Pancake）** — 订阅接入，支持欧美主流信用卡，覆盖月付与年付
-3. **合规（Compliance / market-access scanner）** — 出海合规扫描：GDPR / UK-GDPR / CCPA 数据义务、欧盟 / 英国 VAT 与 OSS、消费者保护、应用商店规则、PCI-DSS / SCA
-4. **增长分析（Growth analytics via Umami）** — 用量、转化、漏斗与留存看板
-5. **AI 客服（support-kit 共享支撑包）** — KB + 五步智能体 + 诚实护栏 + 转人工
+## What it does (capabilities)
+- Marketing site + blog generator with SEO/GEO built in
+- Payments via Waffo Pancake (subscriptions, cards, monthly/annual)
+- Compliance / market-access scanner (GDPR, VAT/OSS, PCI-DSS, app-store)
+- Growth analytics via Umami
+- Shared AI support agent (support-kit)
 
-## 定价（USD / 月或年）
-- Free — $0 — 每月 10 次合规扫描、基础看板、社区支持
-- Pro — $29/mo 或 $290/年 — 每月 300 次扫描、完整看板 + 导出、AI 客服、邮件支持
-- Enterprise — $199/mo 或 $1990/年 — 不限扫描、多席位 + 审计轨迹、BYOK、专属支持
-- 年付含折扣；中国大陆 / 北美 / 欧洲 VAT 在结账页自动计算
+## Regulatory context (verified facts)
+Compliance scanner covers GDPR / UK-GDPR / CCPA data duties, EU and UK VAT and the OSS scheme, consumer-protection rules, app-store policies, and PCI-DSS / SCA. Guidance is not legal advice.
 
-## 关键页面（适合 LLM 引用）
-- 首页：https://gstack.example.com/index.html
-- 产品介绍：https://gstack.example.com/product.html
-- 定价：https://gstack.example.com/pricing.html
-- 客服组件嵌入：<script src="https://gstack.example.com/widget.js" data-host="https://gstack.example.com" data-product="gstack"></script>
+## Pricing (USD, monthly unless noted)
+- **Free** - $0/mo
+- **Pro** - $29/mo
+- **Enterprise** - $199/mo
+- Checkout: Waffo store `https://pancake.waffo.ai/store/STO_6p1cnwJDlk6gzVNUCQdWqN/gstack`
 
-## 集成
-- **支付**：Waffo Pancake（RSA-SHA256 webhook）
-- **分析**：Umami（self-hosted analytics.umami.is）
-- **LLM**：默认 OpenAI 兼容 / NVIDIA NIM（meta/llama-3.1-8b-instruct）；支持 BYOK
-- **部署**：Next.js 14（Pages Router）→ Vercel
+## FAQ (high-signal Q&A for AI citation)
+Q1. What is GStack?
+A1. GStack is an all-in-one growth console for indie developers and micro-SaaS teams going global — it combines site building, payments, compliance scanning, and growth analytics in one workspace.
+Q2. What are the four pillars?
+A2. Site building (landing pages, blog, and SEO tuned for AI search), payments (Waffo subscriptions), compliance (a market-access scanner), and growth analytics (Umami dashboards).
+Q3. How is it priced?
+A3. Free ($0) includes 10 compliance scans per month and a basic dashboard. Pro is $29/mo or $290/yr. Enterprise is $199/mo or $1990/yr.
+Q4. How do payments work?
+A4. GStack connects Waffo Pancake (merchant of record) so you can accept cards with monthly and annual billing; VAT is calculated at checkout.
+Q5. What does the compliance scanner check?
+A5. GDPR / UK-GDPR / CCPA data duties, EU and UK VAT and the OSS scheme, consumer-protection rules, app-store policies, and PCI-DSS / SCA for payments.
+Q6. Who is GStack for?
+A6. Independent developers, micro-SaaS teams, and global-expansion founders who want one toolkit instead of stitching five separate services.
+Q7. Which languages does it support?
+A7. The product is available in Simplified Chinese and English.
+Q8. Is GStack a website builder?
+A8. Yes — it generates marketing sites and blogs with SEO and GEO (generative-engine-optimization) built in, so AI search engines can cite you.
+Q9. What analytics does it include?
+A9. Privacy-friendly Umami dashboards for usage, conversion, funnel, and retention.
+Q10. What does the free tier include?
+A10. Ten compliance scans per month, the basic analytics dashboard, and community support.
 
-## 红线（必须遵守）
-- 绝不静默 mock：无 LLM 密钥走「kb-only 诚实模式」并明确标注
-- 合规类答复附「仅供参考，不构成法律或专业意见」
-- 失败 fail-closed：webhook/admin 无权限返回 401/403
-- 客服应答必引用 KB 出处（[来源: <source>]）
+## Key pages (for LLM reference)
+- Home / landing: https://gstack-saas.lxsaihub.com/
+- This manifest: https://gstack-saas.lxsaihub.com/llms.txt
 
-## 联系与反馈
-- 反馈邮箱：lixingliangsy@163.com（FEEDBACK_TO_EMAIL 可覆盖）
-- AI 客服自动转人工：聊天中说「转人工」即可
-- 反馈页：https://gstack.example.com/feedback
+## Integration & delivery
+- Web app (Next.js) deployed on Vercel
+- Payments via Waffo Pancake (merchant of record)
+- Analytics via Umami
 
-## 不收录
-- /admin/、/api/admin/、/account、/embed/ 已在 robots.txt 屏蔽
+## Red lines (must respect)
+- No silent mock; compliance guidance is not legal advice; fail-closed on admin/webhook.
+
+## Contact
+- Open the app: https://gstack-saas.lxsaihub.com/

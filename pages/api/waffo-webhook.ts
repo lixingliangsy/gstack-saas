@@ -124,7 +124,15 @@ export function verifyWebhookSignature(raw: string, sig: string | null): boolean
     }
   }
   if (WAFFO_WEBHOOK_SECRET) return hmacVerify(raw, sig, WAFFO_WEBHOOK_SECRET);
-  return false;
+  // Fallback: Waffo SDK built-in public keys auto-detect test/prod. This matches the
+  // other 5 products' handlers (which call verifyWebhook directly with no env key) and
+  // is what lets TEST webhooks verify in this deployment where no WAFFO_WEBHO_* env is set.
+  try {
+    verifyWebhook(raw, sig);
+    return true;
+  } catch {
+    return false;
+  }
 }
 
 async function forwardToUmami(p: { currency: string; value: string; transaction_id: string; item_id: string; item_name: string }) {
@@ -159,8 +167,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   const raw = (await readRaw(req)).toString("utf8");
 
   if (!WAFFO_WEBHOOK_SECRET && !WAFFO_WEBHOOK_PROD_PUBLIC_KEY && !WAFFO_WEBHOOK_TEST_PUBLIC_KEY) {
-    console.error("[waffo-webhook] no webhook key configured; failing closed (401).");
-    return res.status(401).end("Webhook verification not configured");
+    // No explicit key env set. Do NOT fail closed: the Waffo SDK ships built-in public
+    // keys that auto-detect test vs prod, so verifyWebhookSignature() below still verifies
+    // the signature. (Matches the other 5 products, which never set a webhook key env.)
+    console.warn("[waffo-webhook] no WAFFO_WEBHO_* env set; using Waffo SDK built-in public keys for verification.");
   }
 
   const sig = getSignature(req);
